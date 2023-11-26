@@ -1,0 +1,1056 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+@media (max-width : 1200px) {
+    .container{
+        width: 940px;
+    }
+    
+}
+@media (max-width : 992px) {
+    .container{
+        width: 720px;
+    }
+    
+}
+@media (max-width : 767px) {
+    .container{
+        width: 540px;
+    }
+    
+}
+
+@media (max-width:440px) {
+    .container{
+        width: 315px;
+    }
+    
+}
+
+/* Start Header */
+header.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem .3rem;
+}
+header.container .search{
+    position: relative;
+    border: 1px solid #c0c0c0;
+}
+header.container .search input{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    padding: .4rem;
+    font-size: 1rem;
+}
+header.container .search input::placeholder{
+    color: #c0c0c0;
+}
+header.container .search i{
+    position: absolute;
+    top: 50%;
+    color: #c0c0c0;
+    right: .3rem;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+
+}
+
+
+/* End Header */
+/* Start Seaction */
+section.title{
+    background-image: url("../img/bg-main-section1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section.title > div{
+    background-color: #00000067;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.title .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+section.title h3{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    
+    
+}
+section.title img{
+    width:30% ;
+    margin: 1.5rem;
+}
+section.title h1{
+    font-size: 6rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+}
+section.title p{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-style: italic;
+    opacity: .9;
+}
+section.title button{
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: #fff 1px solid;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+section.title button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width:1200px) {
+    section.title h1 {
+        font-size: 6rem;
+    }
+
+    section.title img {
+        width: 35%;
+    }
+
+}
+@media (max-width:992px) {
+    section.title h1 {
+        font-size: 4.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    
+
+}
+@media (max-width:767px) {
+    section.title h1 {
+        font-size: 3rem;
+    }
+    section.title p {
+        font-size: 1.2rem;
+            
+            
+    }
+
+    section.title img{
+        width: 60%;
+    }
+
+}
+@media (max-width:440px) {
+    section.title h3 {
+        font-size: 1rem;
+    }
+    section.title h1 {
+        font-size: 1.875rem;
+    }
+
+    section.title img{
+        width: 50%;
+        margin-bottom: 5rem;
+    }
+
+}
+/* End Seaction */
+
+/* Start Cards */
+section.card{
+    background-color: #292b33;
+}
+section.card .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+section.card .cards >div{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    width: calc((100% - 3rem) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: -5vh 0 5vh 0;
+    letter-spacing: 2px;
+    
+    color: #333;
+    
+    
+}
+@media (max-width:991px) {
+    section.card .cards >div{
+        width: calc((100% - 1rem) / 2);
+    }
+    
+}
+@media (max-width:575px) {
+    section.card .cards >div{
+        width: calc(100% );
+    }
+    
+}
+
+section.card .cards > div i{
+    font-size: 3rem;
+    color: #888;
+}
+section.card .cards > div h3{
+    margin: 1rem;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: 1rem;
+    width: 100%;
+}
+section.card .cards > div p{
+    font-size: .7rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+
+section.card .img{
+    position: relative;
+    height: 100vh;
+}
+
+section.card .img > div{
+    
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    position: absolute;
+    
+
+}
+section.card .img > div.img-one{
+    width: 12rem;
+        height: 12rem;
+        top: 3rem;
+        left: 7%;
+        background-image: url(../img/card-img-1.jpg);
+        
+        
+}
+section.card .img > div.img-two{
+    background-image: url(../img/card-img-2.jpg);
+   
+    
+    border: .5rem #fff solid;
+    height: 30rem;
+    width: 30rem;
+    left: 34%;
+    top: 3rem;
+}
+
+
+section.card .img>div.img-three {
+    background-image: url(../img/card-img-3.jpg);
+width: 17rem;
+    height: 17rem;
+    top: 23rem;
+    left: 19%;
+    border: 1rem solid #fff;
+}
+
+section.card .img>div.img-four{
+background-color: transparent;
+    border: 1.6rem solid #6c738a;
+    top: 30rem;
+    right: 31%;
+    width: 8rem;
+    height: 8rem;
+}
+section.card .img>div.img-five{
+    background-color: transparent;
+    border: solid 1.5rem #f58d54;
+    width: 8rem;
+    height: 8rem;
+    top: 17rem;
+    left: 9%;
+}
+@media (max-width:992px) {
+    section.card .img>div.img-one{
+            width: 10rem;
+                height: 10rem;
+                top: 1rem;
+    }
+    section.card .img>div.img-two{
+        height: 25rem;
+            width: 25rem;
+    }
+    section.card .img>div.img-three{
+            width: 15rem;
+                height: 15rem;
+                top: 20rem;
+    }
+    section.card .img>div.img-four{
+            width: 8rem;
+                height: 8rem;
+                border-width: 1.5rem;
+                top: 25rem;
+                right: 25%;
+    }
+    section.card .img>div.img-five{
+            top: 13rem;
+                width: 7rem;
+                height: 7rem;
+    }
+    
+}
+@media (max-width:767px) {
+section.card .img>div.img-one{
+    width: 10rem;
+    height: 10rem;
+    top: 2rem;
+    left: 7%;
+}
+section.card .img>div.img-two{
+    height: 18rem;
+    width: 18rem;
+    top: 2rem;
+    left: 40%;
+}
+section.card .img>div.img-three{
+        width: 12rem;
+        height: 12rem;
+        top: 14rem;
+        left: 20%;
+}
+section.card .img>div.img-four{
+        width: 7rem;
+        height: 7rem;
+        border: 1.1rem solid #6c738a;
+        top: 17.5rem;
+        right: 16%;
+}
+section.card .img>div.img-five{
+        top: 13rem;
+        left: 3%;
+        width: 5rem;
+        height: 5rem;
+        border-width: 1rem;
+}
+    
+}
+
+
+
+@media (max-width:575px){
+    section.card .img{
+        height: 75vh;;
+    }
+    section.card .img>div.img-one{
+        width: 6rem;
+        height: 6rem;
+        top: 0rem;
+    }
+    section.card .img>div.img-two{
+        width: 15rem;
+        height: 15rem;
+        top: 4rem;
+        left: 6rem;
+    }
+    section.card .img>div.img-three{
+        width: 9rem;
+        height: 9rem;
+        left: 1rem;
+    }
+    section.card .img>div.img-four{
+            width: 6rem;
+                height: 6rem;
+                top: 17rem;
+                right: 2rem;
+    }
+    section.card .img>div.img-five{
+        top: 7rem;
+    }
+}
+
+@media (min-width:992px) {
+    section.card .img {
+        height: 86vh;
+    }
+        
+
+}
+/* End Cards */
+
+/* Start Trips */
+section.trips{
+    background-color: #292b33;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+}
+@media (max-width :1200px){
+    section.trips{
+        padding-top: 6rem;
+    }
+}
+@media (max-width :992px){
+    section.trips{
+        padding-top: 1rem;
+    }
+}
+section.trips h2{
+    font-size: 3.75rem;
+}
+section.trips p{
+        font-size: 1.25rem;
+        line-height: 1.6;
+        letter-spacing: 2px;
+        margin: 1.2rem;
+}
+section.trips p.link{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+}
+section.trips p.link a{
+    margin-left: 2px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: #fff solid 1px;
+    padding-bottom: 2px;
+    
+}
+section.trips button{
+        background: #f58d54;
+        color: #fff;
+        padding: 1rem 3.4rem;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        transition: .3s ease;
+
+       
+}
+section.trips button:hover{
+    background-color: #4b4f5f;
+    cursor: pointer;
+}
+@media (max-width:992px) {
+    section.trips h2{
+        font-size: 2.75rem;
+    }
+    section.trips p{
+        font-size: 1rem;
+    }
+    section.trips p.link{
+        font-size: .8rem;
+    }
+    section.trips button{
+        padding: .8rem 2.5rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width:767px) {
+    section.trips h2{
+        font-size: 2rem;
+    }
+    section.trips p{
+        font-size: .8rem;
+    }
+    section.trips p.link{
+        font-size: .7rem;
+    }
+    section.trips button{
+        padding: .7rem 2.2rem;
+        font-size: .7rem;
+    }
+}
+/* End Trips*/
+/* Start About */
+section.about{
+    background-color:#292b33 ;
+    color: #fff;
+    margin-top: -1rem;
+    padding-bottom: 2rem;
+}
+section.about .title h2{
+    font-size: 3.75rem;
+    margin: 1rem 0 0;
+    line-height: 1.1;
+}
+section.about .title p{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    line-height: 1.6;
+}
+section.about .text-img{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+}
+
+@media (max-width:767px) {
+    section.about .text-img{
+        flex-direction: column;
+    }
+    
+}
+
+section.about .text-img .text{
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 45%;
+    padding: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: .95rem;
+    color: #444;
+}
+section.about .text-img .text button{
+    margin: 1rem auto;
+        display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: #f58d54;
+    color: #fff;
+    text-transform: uppercase;
+}
+section.about .text-img .img{
+    align-self: center;
+    justify-self: flex-end;
+    width: 35%;
+}
+section.about .text-img .img div{
+    border-radius: 50%;
+    width: 90;
+    
+    overflow: hidden;
+}
+section.about .text-img .img img{
+    width: 100%;
+}
+section.about .text-img .img p{
+    direction: rtl;
+    font-size: .8rem;
+    margin: .3rem;
+}
+section.about .text-img .img p a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: #fff solid 1px;
+    margin-left: 2px;
+}
+@media (max-width:767px) {
+    section.about .text-img {
+        flex-direction: column;
+    }
+    section.about .text-img .text
+   {
+        width: 90%;
+        margin:0 auto 1.5rem;
+    }
+    section.about .text-img .img{
+        width: 70%;
+
+    }
+
+}
+/* End About */
+
+/* Start Chapter */
+section.chapter{
+    background-color: #292b33;
+    padding: 5rem 0;
+}
+section.chapter .container .cards{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+section.chapter .container .cards .card{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    width: calc((100% - 4rem) / 3);
+    
+    font-weight: normal;
+}
+@media (max-width:992px) {
+    section.chapter .container .cards .card{
+        width: calc((100% - 2rem) / 2);
+    }
+    
+}
+@media (max-width:767px) {
+    section.chapter .container .cards .card{
+        width: calc((100% ));
+    }
+    
+}
+section.chapter .container .cards .card h2{
+    margin: 2rem 0;
+    
+}
+section.chapter .container .cards .card p{
+    color: #777;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+section.chapter .container .cards .card a{
+    text-decoration: none;
+    color: #777;
+    font-size: 1rem;
+    border-bottom: 1px solid #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+section.chapter .img{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+section.chapter .img img{
+    width: 100%;
+}
+
+section.chapter .container > p {
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+section.chapter .container > p a {
+   border-bottom: 1px solid #fff;
+    text-decoration: none;
+    margin-left: 3px;
+    color: inherit;
+}
+/* End Chapter */
+
+/* Start FreeDom */
+
+section.freedom{
+    background-color: #292b33;
+    padding: 5rem 0;
+}
+section.freedom .freedom-img{
+    display: flex;
+    justify-content: center;
+}
+section.freedom .freedom-img .img{
+    width: 25rem;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 25rem;
+}
+section.freedom .freedom-img h2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #fff;
+        font-size: 4rem;
+        margin-right: -8rem;
+        z-index: 2;
+        font-style: italic;
+        font-weight: 500;
+}
+section.freedom .freedom-img .img img{
+    width: 100%;
+}
+section.freedom .freedom-text {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+}
+section.freedom .freedom-text >p{
+        flex: 1;
+        max-width: 300px;
+        line-height: 1.7;
+        letter-spacing: .03rem;
+        text-align: right;
+        padding: 1rem 2rem;
+        font-size: .8rem;
+}
+section.freedom .freedom-text div{
+        height: 4rem;
+        width: 4rem;
+        border: solid .8rem #f58d54;
+        border-radius: 50%;
+        margin: 3rem 1rem 0rem 2rem;
+}
+
+@media (max-width:767px) {
+    section.freedom .freedom-text{
+        justify-content: space-between;
+    }
+    section.freedom .freedom-img h2{
+            font-size: 3rem;
+                margin-right: -10rem;
+    }
+    section.freedom .freedom-img .img{
+        width: 15rem;
+        height: 15rem;
+    }
+}
+@media (max-width:440px) {
+    section.freedom .freedom-text{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    section.freedom .freedom-text div{
+        margin: 0 5rem 0 0;
+            align-self: center;
+    }
+
+}
+
+
+/* End FreeDom */
+
+/* Start Photo */
+section.photo{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    
+}
+section.photo >div{
+    width: calc(100%/3);
+    /* overflow: hidden; */
+}
+@media (max-width:767px) {
+    section.photo > div{
+        width: calc(100%/2);
+    }
+    
+}
+@media (max-width:440px) {
+    section.photo > div{
+        width: calc(100%);
+    }
+    
+}
+
+section.photo >div img{
+    width: 100%;
+    margin-top: -.3rem;
+
+}
+/* End Photo */
+
+/* Start Sub-Photo */
+
+section.sub-photo{
+    background-color: #292b33;
+    margin-top: -.3rem;
+}
+
+section.sub-photo .photo,
+section.sub-photo .text{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+section.sub-photo .photo{
+    justify-content: center;
+    padding: 3rem;
+}
+section.sub-photo .photo > div{
+    width: 45%;
+}
+section.sub-photo .photo > div div{
+        width: 10rem;
+        height: 10rem;
+        border: 2rem solid #6c738a;
+        border-radius: 50%;
+    }
+section.sub-photo .photo .img{
+    overflow: hidden;
+    border-radius: 50%;
+}
+section.sub-photo .photo .img img{
+    width: 100%;
+}
+
+section.sub-photo .text{
+    color: #fff;
+    padding-bottom: 7rem;
+    margin-top: -10rem;
+}
+section.sub-photo .text .text__cyrcle,
+section.sub-photo .text .text__p{
+    width: 40%;
+}
+section.sub-photo .text .text__cyrcle{
+        display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            padding-right: 4rem;
+}
+section.sub-photo .text .text__cyrcle div{
+    width: 7rem;
+        height: 7rem;
+        background-color: #f58d54;
+        border-radius: 50%;
+}
+section.sub-photo .text .text__p{
+        background-color: #fff;
+            border-radius: 1rem;
+            padding: 4rem 2rem;
+            color: #000;
+            width: 60%;
+}
+section.sub-photo .text .text__p h2{
+        font-size: 2.5rem;
+            font-style: italic;
+}
+section.sub-photo .text .text__p p{
+    margin: 1.5rem 0;
+    line-height: 1.7;
+    color: #555
+}
+section.sub-photo .text .text__p span{
+    color: #666;
+}
+section.sub-photo .text .text__p span a{
+    background-color: transparent;
+        color: #666;
+        text-decoration: none;
+        border-bottom: solid 1px #666;
+        padding-bottom: 1px;
+}
+section.sub-photo .text .text__p button{
+    display: block;
+        margin-top: 1.5rem;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: .8rem;
+        background-color: #4b4f5f;
+        color: #fff;
+        border: none;outline: none;
+
+}
+@media (max-width:767px) {
+    section.sub-photo .photo {
+            flex-direction: column-reverse;
+    
+        }
+    
+        section.sub-photo .photo .cyrcle {
+            align-self: flex-end;
+        }
+    
+        section.sub-photo .photo .img {
+            width: 100%;
+        }
+    section.sub-photo .text{
+       
+        flex-direction: column;
+    }
+         section.sub-photo .text >div{
+            width: 80%;
+         }
+
+    section.sub-photo .text .text__p{
+        align-self: flex-end;;
+    }
+    
+}
+
+@media (max-width:440px){
+    
+    section.sub-photo .text {
+    
+        flex-direction: column;
+        margin-top: -8rem;
+    }
+    
+    section.sub-photo .text > div {
+        width: 100%;
+    }
+
+    section.sub-photo .text .text__p {
+        
+        width: 100%;
+        
+    }
+    section.sub-photo .text .text__cyrcle{
+        
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    section .sub-photo .text .text__cyrcle div{
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 4rem;
+        justify-self: flex-start;
+    }
+}
+/* End Sub-Photo */
+/* Start touch */
+section.touch{
+    background-color: #292b33;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+section.touch input ,
+section.touch textarea {
+    background-color: #4b4f5f;
+    padding: 1rem;
+    border: none;
+    border-bottom: #fff 1px solid;
+    outline: none;
+}
+section.touch .container{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+section.touch h2,section.touch .container > div{
+    width: 70%;
+    
+}
+section.touch h2{
+    font-size: 3.75rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section.touch .input .name_email{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+section.touch .input .name_email input{
+    width: calc(50% - 1rem);
+}
+section.touch .input .textarea textarea{
+    width: 100%;
+    
+}
+section.touch .container button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #f58d54;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+section.touch .container button:hover {
+    background-color:#4b4f5f ;
+}
+@media (max-width:992px) {
+    section.touch .container button,
+    section.touch input,
+    section.touch textarea {
+        padding: .5rem;
+    }
+
+    section.touch .container {
+        padding: 0;
+}
+@media (max-width:767px) {
+    
+}
+    section.touch h2{
+        font-size: 2.75;
+    }
+    section.touch h2,
+        section.touch .container>div {
+            width: 100%;
+    
+        }
+}
+/* End touch */
+
+/* Start Footer */
+footer{
+    background-color: #333;
+    padding: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    width: 18rem;
+}
+footer p:first-of-type{
+    font-size: .7rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+footer p:last-of-type{
+    font-size: .6rem;
+    text-align: center;
+
+}
+footer p:last-of-type a{
+    color: #6fb6ed;
+}
+/* End Footer */
